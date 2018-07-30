@@ -13,7 +13,5 @@
     var div=document.createElement('div');
     div.innerHTML=num;
     var body=document.getElementsByTagName('body')[0];
-    console.log(body);
-    console.log(document.body);
     body.appendChild(div);
 })();
