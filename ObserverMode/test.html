@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>发布订阅</title>
+</head>
+<body>
+
+</body>
+<script src="test.js" type="text/javascript"></script>
+<script>
+    pub.subscribe('test',function (topc,arg) {
+        console.log(arg);
+        var div=document.createElement('div');
+        div.innerHTML=arg;
+        document.body.appendChild(div);
+    });
+    pub.publish('test','我正在测试发布订阅');
+</script>
+</html>
